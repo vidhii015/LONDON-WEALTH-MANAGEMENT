@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LWM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Gowun Batang", serif;
+        color: #2e3b42;
+      }
+
+      .logo h4,
+      .header-left nav a,
+      .header-right a,
+      .hero-section .info p,
+      .hero-section .info button,
+      .client-section h4,
+      .contact-us-section .contact-info h4,
+      .contact-us-section .contact-info button,
+      footer .phone h4,
+      footer .footer-bottom nav a,
+      footer .footer-bottom p {
+        font-family: "Roboto", sans-serif;
+      }
+      .header-left nav a::before,
+      .header-left nav a:hover::before,
+      .header-right,
+      .hero-section .info button:hover,
+      .client-section .pages .page:hover,
+      .contact-us-section {
+        background-color: #b49051;
+      }
+      header .header-left .logo h4 {
+        color: #cebcd8;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="flex items-center my-12 mx-16">
+      <div
+        class="header-left flex items-center justify-between py-[10.5px] px-7 bg-purple-900 w-[87%]"
+      >
+        <div class="logo flex items-center gap-2">
+          <h1 class="text-white text-5xl tracking-wider">LWM</h1>
+          <h4 class="w-[50%] text-sm tracking-wide">
+            LONDON WEALTH MANAGEMENT
+          </h4>
+        </div>
+        <nav class="flex gap-6 text-white text-sm">
+          <a
+            href="about-you-tailwindcss.html"
+            class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
+            >ABOUT YOU</a
+          >
+          <a
+            href="our-services-tailwindcss.html"
+            class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
+            >OUR SERVICES</a
+          >
+          <a
+            href="about-us-tailwindcss.html"
+            class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
+            >ABOUT US</a
+          >
+          <a
+            href="contact-us-tailwindcss.html"
+            class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
+            >CONTACT US</a
+          >
+        </nav>
+      </div>
+      <div class="header-right text-white py-[22.5px] px-8">
+        <a href="#" class="hover:opacity-70 hover:duration-300">CLIENT LOGIN</a>
+      </div>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <div class="hero-section flex items-center justify-between my-14 mx-52">
+        <div class="info w-[35%] flex items-start flex-col gap-6">
+          <h1 class="text-5xl">Financial Planning led Investment Management</h1>
+          <p class="text-lg text-stone-500">
+            Our aim is to go beyond what is expected by our clients and provide
+            a high-quality professional service, driven by expertise and
+            delivered through exceptional teamwork.
+          </p>
+          <button
+            class="border-2 border-yellow-600 text-yellow-600 py-2.5 px-4 mt-2 duration-300 hover:text-white"
+          >
+            DISCOVER MORE
+          </button>
+        </div>
+        <img
+          src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/08/heroHomeV2.jpeg.webp"
+          alt=""
+          class="w-[53%]"
+        />
+      </div>
+
+      <!-- Intro Section -->
+      <div class="intro-section my-24 flex justify-center">
+        <hr />
+        <p
+          class="text-center text-xl w-[45%] before:content-'' before:h-[100%] before:w-[1.5px] before:bg-stone-400 before:-left-10 before:top-0 before:absolute relative after:content-'' after:h-[100%] after:w-[1.5px] after:bg-stone-400 after:-right-10 after:top-0 after:absolute"
+        >
+          London Wealth Management is an alternative to the largest wealth
+          management companies, with a comparable level of expertise, outsourced
+          custodian security and stability but with a personal and high-quality
+          service. London Wealth Management is a genuine alternative for you.
+        </p>
+        <hr />
+      </div>
+
+      <!-- Client Section -->
+      <div
+        class="client-section flex flex-col items-center gap-7 mt-16 py-24 bg-[#f1f1f1]"
+      >
+        <h4 class="text-yellow-600 text-xl">WHAT OUR CLIENTS SAY</h4>
+        <h2 class="text-3xl">"Safe and secure with LWM"</h2>
+        <h3 class="text-xl w-[45%] text-center text-stone-500">
+          "I always feel safe and secure that LWM is looking after me. It is so
+          appreciated trust me, I can plough on with my life after our chat and
+          sleep easy at night."
+        </h3>
+        <div class="pages flex gap-3 mt-5">
+          <div
+            class="page py-2.5 px-5 rounded-full text-lg bg-white duration-300 hover:text-white"
+          >
+            1
+          </div>
+          <div
+            class="page py-2.5 px-5 rounded-full text-lg bg-white duration-300 hover:text-white"
+          >
+            2
+          </div>
+          <div
+            class="page py-2.5 px-5 rounded-full text-lg bg-white duration-300 hover:text-white"
+          >
+            3
+          </div>
+          <div
+            class="page py-2.5 px-5 rounded-full text-lg bg-white duration-300 hover:text-white"
+          >
+            4
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Section -->
+      <div class="progress-section my-16">
+        <div class="title text-center">
+          <i class="fa-regular fa-flag text-yellow-600 text-2xl"></i>
+          <h2 class="mt-2 text-2xl tracking-wide">Our progress in numbers</h2>
+        </div>
+        <div class="content flex justify-around my-10">
+          <div class="numbers">
+            <h1 class="text-7xl text-yellow-600 text-center">97%</h1>
+            <h3 class="text-xl">Client retention rate</h3>
+          </div>
+          <div class="numbers">
+            <h1 class="text-7xl text-yellow-600 text-center">100%</h1>
+            <h3 class="text-xl">Clients come through referrals</h3>
+          </div>
+          <div class="numbers">
+            <h1 class="text-7xl text-yellow-600 text-center">£355m+</h1>
+            <h3 class="text-xl">Assets Under Management</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT US Section -->
+      <div class="contact-us-section flex items-center my-20 mx-56">
+        <div class="contact-info flex flex-col items-center gap-6 text-center">
+          <i class="fa-solid fa-phone-flip text-white text-xl"></i>
+          <h4 class="text-white">Get in touch</h4>
+          <h2 class="text-white w-[70%] text-xl">
+            Contact us for a conversation with one of our experts to see if we
+            could be the right fit for you.
+            <span class="contact-number text-white hover:text-purple-900"
+              >0203 326 2225</span
+            >
+          </h2>
+          <button
+            class="text-white border-2 py-2 px-4 tracking-widest duration-300 hover:opacity-70"
+          >
+            CONTACT US
+          </button>
+        </div>
+        <img
+          src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/08/new_cta_5.jpg.webp"
+          alt=""
+          class="w-[50%] h-fit"
+        />
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-purple-900 py-20 px-48">
+      <div class="footer-top flex justify-between">
+        <div class="logo flex items-center gap-2">
+          <h1 class="text-white text-5xl tracking-wider">LWM</h1>
+          <h4 class="text-[#cebcd8] w-[50%] text-sm">
+            LONDON WEALTH MANAGEMENT
+          </h4>
+        </div>
+        <div class="phone flex flex-col items-end">
+          <h3 class="text-white text-xl flex items-center gap-3">
+            <i class="fa-solid fa-phone-flip text-white text-sm"></i> 0203 326
+            2955
+          </h3>
+          <h4 class="text-white text-sm mt-2.5">
+            22 Soho Square, London W1D 4NS
+          </h4>
+        </div>
+      </div>
+      <div
+        class="footer-bottom flex flex-col items-center gap-7 mt-12 text-center"
+      >
+        <nav class="flex gap-7 text-white text-sm">
+          <a href="#" class="duration-300 hover:text-yellow-600"
+            >Client Charter</a
+          >
+          <a href="#" class="duration-300 hover:text-yellow-600"
+            >Explaining the Jargon</a
+          >
+          <a href="#" class="duration-300 hover:text-yellow-600"
+            >Annual Disclosures</a
+          >
+        </nav>
+        <nav class="flex gap-7 text-white text-sm">
+          <a href="#" class="duration-300 hover:text-yellow-600">Cookies</a>
+          <a href="#" class="duration-300 hover:text-yellow-600"
+            >Privacy Policy</a
+          >
+          <a href="#" class="duration-300 hover:text-yellow-600">Disclaimer</a>
+          <a href="#" class="duration-300 hover:text-yellow-600">Complaints</a>
+          <a href="#" class="duration-300 hover:text-yellow-600"
+            >Site by PLOTT</a
+          >
+        </nav>
+        <p class="text-white text-xs">
+          London Wealth Management Ltd is Authorised and Regulated by the
+          Financial Conduct Authority
+        </p>
+        <p class="text-white text-xs">
+          Registered in England and Wales number 6462818 at c/o Mercer & Hole.
+          Trinity Court, Church Street Rickmansworth, WD31 RT
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
