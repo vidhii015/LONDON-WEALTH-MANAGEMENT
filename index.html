@@ -52,7 +52,7 @@
   </head>
   <body>
     <!-- header -->
-    <header class="flex items-center my-12 mx-16">
+    <header class="flex items-center xl:my-12 xl:mx-16 sm:my-5 sm:mx-3">
       <div
         class="header-left flex items-center justify-between py-[10.5px] px-7 bg-purple-900 w-[87%]"
       >
@@ -62,7 +62,7 @@
             LONDON WEALTH MANAGEMENT
           </h4>
         </div>
-        <nav class="flex gap-6 text-white text-sm">
+        <nav class="lg:flex xl:gap-6 text-white text-sm sm:hidden lg:gap-5">
           <a
             href="pages/about-you.html"
             class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
@@ -85,22 +85,28 @@
           >
         </nav>
       </div>
-      <div class="header-right text-white py-[22.5px] px-8">
+      <div class="header-right text-white 2xl:py-[22.5px] px-8 sm:py-2.5">
         <a href="#" class="hover:opacity-70 hover:duration-300">CLIENT LOGIN</a>
       </div>
     </header>
     <main>
       <!-- Hero Section -->
-      <div class="hero-section flex items-center justify-between my-14 mx-52">
-        <div class="info w-[35%] flex items-start flex-col gap-6">
-          <h1 class="text-5xl">Financial Planning led Investment Management</h1>
-          <p class="text-lg text-stone-500">
+      <div
+        class="hero-section flex items-center justify-between xl:my-14 xl:mx-52 sm:mx-5 lg:mx-20"
+      >
+        <div
+          class="info lg:w-[35%] flex items-start flex-col lg:gap-6 sm:gap-3 sm:w-[40%]"
+        >
+          <h1 class="2xl:text-5xl sm:text-3xl lg:text-4xl xl:text-4xl">
+            Financial Planning led Investment Management
+          </h1>
+          <p class="xl:text-lg text-stone-500 sm:text-sm">
             Our aim is to go beyond what is expected by our clients and provide
             a high-quality professional service, driven by expertise and
             delivered through exceptional teamwork.
           </p>
           <button
-            class="border-2 border-yellow-600 text-yellow-600 py-2.5 px-4 mt-2 duration-300 hover:text-white"
+            class="border-2 border-yellow-600 text-yellow-600 lg:py-2.5 lg:px-4 mt-2 duration-300 hover:text-white sm:p-2"
           >
             DISCOVER MORE
           </button>
@@ -108,7 +114,7 @@
         <img
           src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/08/heroHomeV2.jpeg.webp"
           alt=""
-          class="w-[53%]"
+          class="lg:w-[53%] sm:w-[59%]"
         />
       </div>
 
@@ -116,7 +122,7 @@
       <div class="intro-section my-24 flex justify-center">
         <hr />
         <p
-          class="text-center text-xl w-[45%] before:content-'' before:h-[100%] before:w-[1.5px] before:bg-stone-400 before:-left-10 before:top-0 before:absolute relative after:content-'' after:h-[100%] after:w-[1.5px] after:bg-stone-400 after:-right-10 after:top-0 after:absolute"
+          class="text-center xl:text-xl lg:w-[45%] before:content-'' before:h-[100%] before:w-[1.5px] before:bg-stone-400 before:-left-10 before:top-0 before:absolute relative after:content-'' after:h-[100%] after:w-[1.5px] after:bg-stone-400 after:-right-10 after:top-0 after:absolute sm:w-[70%] sm:text-lg"
         >
           London Wealth Management is an alternative to the largest wealth
           management companies, with a comparable level of expertise, outsourced
@@ -128,12 +134,16 @@
 
       <!-- Client Section -->
       <div
-        class="client-section flex flex-col items-center gap-7 mt-16 py-24 bg-[#f1f1f1]"
+        class="client-section flex flex-col items-center xl:gap-7 mt-16 xl:py-24 bg-[#f1f1f1] sm:py-10 sm:gap-4"
       >
-        <h4 class="text-yellow-600 text-xl">WHAT OUR CLIENTS SAY</h4>
-        <h2 class="text-3xl">"Safe and secure with LWM"</h2>
-        <h3 class="text-xl w-[45%] text-center text-stone-500">
-          "I always feel safe and secure that LWM is looking after me. It is so
+        <h4 class="text-yellow-600 xl:text-xl sm:text-lg">
+          WHAT OUR CLIENTS SAY
+        </h4>
+        <h2 class="xl:text-3xl sm:text-2xl">"Safe and secure with LWM"</h2>
+        <h3
+          class="xl:text-xl xl:w-[45%] text-center text-stone-500 sm:text-lg sm:w-[75%]"
+        >
+          " I always feel safe and secure that LWM is looking after me. It is so
           appreciated trust me, I can plough on with my life after our chat and
           sleep easy at night."
         </h3>
@@ -169,26 +179,38 @@
         </div>
         <div class="content flex justify-around my-10">
           <div class="numbers">
-            <h1 class="text-7xl text-yellow-600 text-center">97%</h1>
-            <h3 class="text-xl">Client retention rate</h3>
+            <h1 class="xl:text-7xl text-yellow-600 text-center sm:text-5xl">
+              97%
+            </h1>
+            <h3 class="xl:text-xl sm:text-lg">Client retention rate</h3>
           </div>
           <div class="numbers">
-            <h1 class="text-7xl text-yellow-600 text-center">100%</h1>
-            <h3 class="text-xl">Clients come through referrals</h3>
+            <h1 class="xl:text-7xl text-yellow-600 text-center sm:text-5xl">
+              100%
+            </h1>
+            <h3 class="xl:text-xl sm:text-lg">
+              Clients come through referrals
+            </h3>
           </div>
           <div class="numbers">
-            <h1 class="text-7xl text-yellow-600 text-center">£355m+</h1>
-            <h3 class="text-xl">Assets Under Management</h3>
+            <h1 class="xl:text-7xl text-yellow-600 text-center sm:text-5xl">
+              £355m+
+            </h1>
+            <h3 class="xl:text-xl sm:text-lg">Assets Under Management</h3>
           </div>
         </div>
       </div>
 
       <!-- CONTACT US Section -->
-      <div class="contact-us-section flex items-center my-20 mx-56">
-        <div class="contact-info flex flex-col items-center gap-6 text-center">
+      <div
+        class="contact-us-section flex items-center xl:mx-56 sm:mx-5 my-20 lg:mx-28"
+      >
+        <div
+          class="contact-info flex flex-col items-center lg:gap-6 text-center sm:gap-3"
+        >
           <i class="fa-solid fa-phone-flip text-white text-xl"></i>
           <h4 class="text-white">Get in touch</h4>
-          <h2 class="text-white w-[70%] text-xl">
+          <h2 class="text-white w-[70%] lg:text-xl sm:text-lg">
             Contact us for a conversation with one of our experts to see if we
             could be the right fit for you.
             <span class="contact-number text-white hover:text-purple-900"
@@ -209,7 +231,7 @@
       </div>
     </main>
     <!-- Footer -->
-    <footer class="bg-purple-900 py-20 px-48">
+    <footer class="bg-purple-900 xl:py-20 xl:px-48 sm:px-5 sm:py-10 lg:p-20">
       <div class="footer-top flex justify-between">
         <div class="logo flex items-center gap-2">
           <h1 class="text-white text-5xl tracking-wider">LWM</h1>

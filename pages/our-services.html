@@ -50,9 +50,11 @@
   </head>
   <body>
     <!-- header -->
-    <header class="flex items-center my-12 mx-16 absolute">
+    <header
+      class="flex items-center lg:my-12 lg:mx-16 absolute sm:my-5 sm:mx-3"
+    >
       <div
-        class="header-left flex items-center justify-between py-[10.5px] px-7 bg-white w-[76vw]"
+        class="header-left flex items-center justify-between py-[10.5px] px-7 bg-white w-[87%]"
       >
         <div class="logo flex items-center gap-2">
           <h1 class="text-purple-900 text-5xl tracking-wider">LWM</h1>
@@ -60,7 +62,7 @@
             LONDON WEALTH MANAGEMENT
           </h4>
         </div>
-        <nav class="flex gap-6 text-sm">
+        <nav class="lg:flex xl:gap-6 text-sm sm:hidden lg:gap-3">
           <a
             href="about-you.html"
             class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
@@ -83,7 +85,7 @@
           >
         </nav>
       </div>
-      <div class="header-right text-white py-[22.5px] px-8">
+      <div class="header-right text-white 2xl:py-[22.5px] px-8 sm:py-2.5">
         <a href="#" class="hover:opacity-70 hover:duration-300">CLIENT LOGIN</a>
       </div>
     </header>
@@ -94,7 +96,7 @@
       >
         <h5 class="text-white tracking-widest mt-24">OUR SERVICES</h5>
         <h3
-          class="text-white text-2xl tracking-wider text-center w-[45%] before:content-'' before:h-[210px] before:w-[1.5px] before:bg-yellow-600 before:absolute before:-bottom-60 before:left-[50%] relative"
+          class="text-white text-2xl tracking-wider text-center lg:w-[45%] before:content-'' before:h-[210px] before:w-[1.5px] before:bg-yellow-600 before:absolute before:-bottom-60 before:left-[50%] relative sm:w-[80%]"
         >
           At London Wealth Management we strive to deliver an outstanding
           personal service with the aim of protecting and growing the wealth of
@@ -103,7 +105,7 @@
       </div>
       <!-- info -->
       <div class="info flex flex-col items-center my-24">
-        <h3 class="w-[42%] text-center text-xl">
+        <h3 class="lg:w-[42%] text-center text-xl sm:w-[80%]">
           We believe the best way to deliver such a service is through the
           calibre of those that represent you. We have built a team of
           experienced, talented and highly qualified professionals. When you
@@ -113,9 +115,9 @@
       </div>
       <!-- Investment Management Section -->
       <div
-        class="investment-management-section flex items-center py-3 px-44 gap-24"
+        class="investment-management-section flex items-center py-3 px-44 gap-24 sm:px-12 sm:flex-wrap-reverse justify-center lg:flex-nowrap"
       >
-        <div class="investment-management-info flex flex-col gap-7">
+        <div class="investment-management-info flex flex-col lg:gap-7 sm:gap-4">
           <h2 class="text-2xl">Financial Planning led Investment Management</h2>
           <p class="text-stone-500 text-[16px] leading-6">
             We offer financial planning and discretionary investment management.
@@ -138,17 +140,17 @@
         <img
           src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/07/SIGNPOST-ill.jpeg.webp"
           alt=""
-          class="w-[50%]"
+          class="lg:w-[50%] sm:w-[80%]"
         />
       </div>
       <!-- Unified Service Section -->
       <div
-        class="unified-service-section flex flex-col items-center gap-7 py-10 px-36 mt-10 before:content-'' before:w-[100%] before:h-[1px] before:bg-[#cecece] before:top-0 before:absolute relative after:content-'' after:w-[100%] after:h-[1px] after:bg-[#cecece] after:bottom-0 after:absolute"
+        class="unified-service-section flex flex-col items-center gap-7 py-10 px-36 mt-10 before:content-'' before:w-[100%] before:h-[1px] before:bg-[#cecece] before:top-0 before:absolute relative after:content-'' after:w-[100%] after:h-[1px] after:bg-[#cecece] after:bottom-0 after:absolute sm:px-5"
       >
         <h2 class="text-2xl tracking-wider">
           Combined disciplines for a unified service
         </h2>
-        <p class="w-[50%] text-center leading-5 text-stone-500">
+        <p class="lg:w-[50%] text-center leading-5 text-stone-500 sm:w-[70%]">
           To deliver the best possible outcomes we shall research, review,
           rebalance, and report regularly. We will sit with you periodically to
           review your planning and goals, ultimately keeping you on track.
@@ -190,11 +192,15 @@
         </div>
       </div>
       <!-- CONTACT US Section -->
-      <div class="contact-us-section flex items-center my-20 mx-56">
-        <div class="contact-info flex flex-col items-center gap-6 text-center">
+      <div
+        class="contact-us-section flex items-center xl:mx-56 sm:mx-5 my-20 lg:mx-28"
+      >
+        <div
+          class="contact-info flex flex-col items-center lg:gap-6 text-center sm:gap-3"
+        >
           <i class="fa-solid fa-phone-flip text-white text-xl"></i>
           <h4 class="text-white">Get in touch</h4>
-          <h2 class="text-white w-[70%] text-xl">
+          <h2 class="text-white w-[70%] lg:text-xl sm:text-lg">
             Contact us for a conversation with one of our experts to see if we
             could be the right fit for you.
             <span class="contact-number text-white hover:text-purple-900"
@@ -215,7 +221,7 @@
       </div>
     </main>
     <!-- Footer -->
-    <footer class="bg-purple-900 py-20 px-48">
+    <footer class="bg-purple-900 xl:py-20 xl:px-48 sm:px-5 sm:py-10 lg:p-20">
       <div class="footer-top flex justify-between">
         <div class="logo flex items-center gap-2">
           <h1 class="text-white text-5xl tracking-wider">LWM</h1>
