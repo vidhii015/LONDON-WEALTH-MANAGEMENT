@@ -43,9 +43,11 @@
   </head>
   <body>
     <!-- header -->
-    <header class="flex items-center my-12 mx-16 absolute">
+    <header
+      class="flex items-center xl:mx-16 md:my-12 md:mx-20 lg:mx-5 2xl:mx-24 absolute sm:mx-5 sm:my-10"
+    >
       <div
-        class="header-left flex items-center justify-between py-[10.5px] px-7 bg-white w-[76vw]"
+        class="header-left flex items-center justify-between py-[10.5px] px-7 bg-white xl:w-[87%] md:w-[100%] xl:gap-64 2xl:gap-72"
       >
         <div class="logo flex items-center gap-2">
           <h1 class="text-purple-900 text-5xl tracking-wider">LWM</h1>
@@ -53,7 +55,7 @@
             LONDON WEALTH MANAGEMENT
           </h4>
         </div>
-        <nav class="flex gap-6 text-sm">
+        <nav class="lg:flex xl:gap-6 text-sm sm:hidden lg:gap-3">
           <a
             href="about-you.html"
             class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
@@ -76,7 +78,7 @@
           >
         </nav>
       </div>
-      <div class="header-right text-white py-[22.5px] px-8">
+      <div class="header-right text-white 2xl:py-[11px] px-8 sm:py-6 md:py-2.5">
         <a href="#" class="hover:opacity-70 hover:duration-300">CLIENT LOGIN</a>
       </div>
     </header>
@@ -87,7 +89,7 @@
       >
         <h5 class="text-white tracking-widest mt-24">CONTACT US</h5>
         <h3
-          class="text-white text-2xl tracking-wider text-center w-[45%] before:content-'' before:h-[210px] before:w-[1.5px] before:bg-yellow-600 before:absolute before:-bottom-60 before:left-[50%] relative"
+          class="text-white text-2xl tracking-wider text-center lg:w-[45%] before:content-'' before:h-[210px] before:w-[1.5px] before:bg-yellow-600 before:absolute before:-bottom-60 before:left-[50%] relative sm:w-[85%]"
         >
           Have a question about our Planning led Investment Management services?
           Call or send us a message to arrange a no-obligation conversation with
@@ -95,12 +97,14 @@
         </h3>
       </div>
       <!-- Contact Form -->
-      <div class="contact-form flex py-28 px-36">
+      <div
+        class="contact-form flex py-28 md:px-36 sm:flex-wrap lg:flex-nowrap sm:gap-5 sm:px-20"
+      >
         <div class="contact-info flex flex-col gap-6">
           <img
             src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/08/slimSoho.jpeg"
             alt=""
-            class="w-[75%]"
+            class="lg:w-[75%] sm:w-[90%]"
           />
           <h3 class="duration-300 text-lg hover:text-yellow-600">
             <i class="fa-solid fa-phone-flip text-yellow-600 mr-2"></i> 0203 326
@@ -115,7 +119,7 @@
             Square, London WID 4NS
           </h3>
         </div>
-        <form class="w-[90%]">
+        <form class="w-[90%] sm:w-[100%]">
           <input
             type="text"
             class="w-[43%] m-3 p-3 rounded-md outline-0 bg-[#efefef]"
@@ -150,7 +154,7 @@
       </div>
     </main>
     <!-- Footer -->
-    <footer class="bg-purple-900 py-20 px-48">
+    <footer class="bg-purple-900 xl:py-20 xl:px-48 sm:px-5 sm:py-10 lg:p-20">
       <div class="footer-top flex justify-between">
         <div class="logo flex items-center gap-2">
           <h1 class="text-white text-5xl tracking-wider">LWM</h1>

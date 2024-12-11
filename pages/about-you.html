@@ -49,9 +49,11 @@
   </head>
   <body>
     <!-- header -->
-    <header class="flex items-center my-12 mx-16 absolute">
+    <header
+      class="flex items-center xl:mx-16 md:my-12 md:mx-20 lg:mx-5 2xl:mx-24 absolute sm:mx-5 sm:my-10"
+    >
       <div
-        class="header-left flex items-center justify-between py-[10.5px] px-7 bg-white w-[76vw]"
+        class="header-left flex items-center justify-between py-[10.5px] px-7 bg-white xl:w-[87%] md:w-[100%] xl:gap-64 2xl:gap-72"
       >
         <div class="logo flex items-center gap-2">
           <h1 class="text-purple-900 text-5xl tracking-wider">LWM</h1>
@@ -59,7 +61,7 @@
             LONDON WEALTH MANAGEMENT
           </h4>
         </div>
-        <nav class="flex gap-6 text-sm">
+        <nav class="lg:flex xl:gap-6 text-sm sm:hidden lg:gap-3">
           <a
             href="about-you.html"
             class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-1 before:opacity-1"
@@ -82,7 +84,7 @@
           >
         </nav>
       </div>
-      <div class="header-right text-white py-[22.5px] px-8">
+      <div class="header-right text-white 2xl:py-[11px] px-8 sm:py-6 md:py-2.5">
         <a href="#" class="hover:opacity-70 hover:duration-300">CLIENT LOGIN</a>
       </div>
     </header>
@@ -93,7 +95,7 @@
       >
         <h5 class="text-white tracking-widest mt-24">ABOUT YOU</h5>
         <h3
-          class="text-white text-2xl tracking-wider text-center w-[45%] before:content-'' before:h-[210px] before:w-[1.5px] before:bg-yellow-600 before:absolute before:-bottom-60 before:left-[50%] relative"
+          class="text-white text-2xl tracking-wider text-center xl:w-[45%] lg:w-[55%] before:content-'' before:h-[210px] before:w-[1.5px] before:bg-yellow-600 before:absolute before:-bottom-60 before:left-[50%] relative sm:w-[85%] md:w-[70%]"
         >
           We build real relationships with our clients to deliver a personal and
           professional service with combined investment & planning that goes
@@ -102,7 +104,9 @@
       </div>
       <!-- info -->
       <div class="info flex flex-col items-center my-24">
-        <h3 class="w-[43%] text-2xl text-center">
+        <h3
+          class="xl:w-[43%] lg:w-[53%] text-2xl text-center sm:w-[85%] md:w-[70%]"
+        >
           London Wealth Management was founded on the principle of being a true
           alternative to the largest wealth management companies, to offer and
           deliver more than your expectations. We strive to deliver a personal
@@ -110,7 +114,9 @@
         </h3>
       </div>
       <!-- Service Section -->
-      <div class="service-section px-16 py-24 flex items-center">
+      <div
+        class="service-section px-16 py-24 flex items-center sm:flex-wrap sm:gap-10 lg:flex-nowrap lg:gap-0"
+      >
         <div class="service-info flex flex-col gap-6">
           <h2 class="text-2xl">What you want from our service</h2>
           <p class="text-stone-500 w-[92.5%] lh-sm tracking-wider]">
@@ -136,7 +142,7 @@
             relationships.
           </p>
         </div>
-        <div class="client-info bg-[#f4f5f5] py-12 px-16">
+        <div class="client-info bg-[#f4f5f5] py-12 px-16 lg:px-7">
           <h4 class="text-xl">LWM clients are:</h4>
           <ul
             class="flex flex-col gap-5 mt-5 ml-4 list-disc marker:text-yellow-600 marker:text-2xl"
@@ -162,11 +168,13 @@
         </div>
       </div>
       <!-- Accumulation Section -->
-      <div class="accumulation-section flex items-start py-12 px-44 gap-28">
+      <div
+        class="accumulation-section flex items-start py-12 px-44 gap-28 sm:flex-wrap sm:gap-10 sm:px-20 sm:justify-center lg:flex-nowrap lg:gap-2"
+      >
         <img
           src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/07/LIBERTY-CLOCK-DARKER-PURPLE.jpeg.webp"
           alt=""
-          class="w-[47%] sticky top-0"
+          class="lg:w-[47%] lg:sticky top-0 sm:static sm:w-[90%]"
         />
         <div class="accumulation-info flex flex-col gap-7">
           <h2 class="text-3xl">Accumulation</h2>
@@ -208,7 +216,9 @@
         </div>
       </div>
       <!-- Decumulation Section -->
-      <div class="decumulation-section flex items-start py-16 px-44 gap-28">
+      <div
+        class="decumulation-section flex items-start py-16 px-44 gap-28 sm:flex-wrap-reverse sm:gap-10 sm:px-20 sm:justify-center lg:flex-nowrap lg:gap-2"
+      >
         <div class="decumulation-info flex flex-col gap-7">
           <h2 class="text-3xl">Decumulation</h2>
           <p class="text-stone-500 leading-6 text-[16px]">
@@ -243,12 +253,12 @@
         <img
           src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/07/flowershop.jpeg.webp"
           alt=""
-          class="w-[47%] sticky top-0"
+          class="lg:w-[47%] lg:sticky top-0 sm:static sm:w-[90%]"
         />
       </div>
     </main>
     <!-- Footer -->
-    <footer class="bg-purple-900 py-20 px-48">
+    <footer class="bg-purple-900 xl:py-20 xl:px-48 sm:px-5 sm:py-10 lg:p-20">
       <div class="footer-top flex justify-between">
         <div class="logo flex items-center gap-2">
           <h1 class="text-white text-5xl tracking-wider">LWM</h1>
