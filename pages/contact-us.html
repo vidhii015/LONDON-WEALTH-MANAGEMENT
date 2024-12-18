@@ -44,52 +44,70 @@
   <body>
     <!-- header -->
     <header
-      class="flex items-center xl:mx-16 md:my-12 md:mx-20 lg:mx-5 2xl:mx-24 absolute sm:mx-5 sm:my-10"
+      class="flex items-center m-4 sm:m-7 lg:my-8 xl:my-12 xl:mx-16 absolute"
     >
       <div
-        class="header-left flex items-center justify-between py-[10.5px] px-7 bg-white xl:w-[87%] md:w-[100%] xl:gap-64 2xl:gap-72"
+        class="header-left flex items-center justify-between py-2.5 px-3 bg-white w-[67vw] sm:w-[78vw] sm:px-7 sm:py-3 md:w-[82.5vw] xl:w-[81.5vw]"
       >
         <div class="logo flex items-center gap-2">
-          <h1 class="text-purple-900 text-5xl tracking-wider">LWM</h1>
-          <h4 class="w-[50%] text-sm tracking-wide">
+          <h1
+            class="text-purple-900 text-3xl tracking-wider lg:text-4xl xl:text-5xl"
+          >
+            LWM
+          </h1>
+          <h4
+            class="w-[20%] text-[5px] tracking-wide lg:text-[10px] lg:w-[50%] xl:text-sm"
+          >
             LONDON WEALTH MANAGEMENT
           </h4>
         </div>
-        <nav class="lg:flex xl:gap-6 text-sm sm:hidden lg:gap-3">
+        <i
+          class="fa-solid fa-bars text-purple-900 text-xl p-1 md:hidden cursor-pointer"
+          id="sidebar"
+        ></i>
+        <nav
+          class="gap-6 text-sm hidden transition-all duration-500 opacity-0 top-0 right-0 md:flex md:opacity-100 md:text-xs xl:text-sm"
+        >
           <a
             href="about-you.html"
-            class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
+            class="w-fit before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
             >ABOUT YOU</a
           >
           <a
             href="our-services.html"
-            class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
+            class="w-fit before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
             >OUR SERVICES</a
           >
           <a
             href="about-us.html"
-            class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
+            class="w-fit before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
             >ABOUT US</a
           >
           <a
             href="contact-us.html"
-            class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-1 before:opacity-1"
+            class="w-fit before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-1 before:opacity-1"
             >CONTACT US</a
           >
         </nav>
       </div>
-      <div class="header-right text-white 2xl:py-[11px] px-8 sm:py-6 md:py-2.5">
-        <a href="#" class="hover:opacity-70 hover:duration-300">CLIENT LOGIN</a>
+      <div
+        class="header-right text-white py-1 px-5 text-center sm:py-1.5 md:py-1.5 lg:py-5 xl:py-6"
+      >
+        <a
+          href="#"
+          class="text-xs hover:opacity-70 hover:duration-300 xl:text-sm"
+          >CLIENT LOGIN</a
+        >
       </div>
     </header>
     <main>
       <!-- Contact Us Section -->
       <div
-        class="contact-us-section bg-purple-900 py-44 flex flex-col items-center gap-4"
+        class="contact-us-section bg-purple-900 py-32 px-3 flex flex-col items-center gap-4 md:py-32 md:px-10 lg:gap-0 xl:py-44"
       >
         <h5 class="text-white tracking-widest mt-24">CONTACT US</h5>
         <h3
-          class="text-white text-2xl tracking-wider text-center lg:w-[45%] before:content-'' before:h-[210px] before:w-[1.5px] before:bg-yellow-600 before:absolute before:-bottom-60 before:left-[50%] relative sm:w-[85%]"
+          class="text-white text-2xl tracking-wider text-center before:content-'' before:h-[210px] before:w-[1.5px] before:bg-yellow-600 before:absolute before:-bottom-56 before:left-[50%] relative lg:w-[57%] lg:mt-3 xl:w-[45%]"
         >
           Have a question about our Planning led Investment Management services?
           Call or send us a message to arrange a no-obligation conversation with
@@ -98,13 +116,13 @@
       </div>
       <!-- Contact Form -->
       <div
-        class="contact-form flex py-28 md:px-36 sm:flex-wrap lg:flex-nowrap sm:gap-5 sm:px-20"
+        class="contact-form flex flex-wrap py-28 px-6 gap-7 md:flex-nowrap lg:px-16 xl:px-36"
       >
         <div class="contact-info flex flex-col gap-6">
           <img
             src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/08/slimSoho.jpeg"
             alt=""
-            class="lg:w-[75%] sm:w-[90%]"
+            class="lg:w-[75%]"
           />
           <h3 class="duration-300 text-lg hover:text-yellow-600">
             <i class="fa-solid fa-phone-flip text-yellow-600 mr-2"></i> 0203 326
@@ -119,22 +137,22 @@
             Square, London WID 4NS
           </h3>
         </div>
-        <form class="w-[90%] sm:w-[100%]">
+        <form class="xl:w-[90%]">
           <input
             type="text"
-            class="w-[43%] m-3 p-3 rounded-md outline-0 bg-[#efefef]"
+            class="m-3 p-3 w-[90%] rounded-md outline-0 bg-[#efefef] lg:w-[41%] xl:w-[43%]"
             placeholder="Your name"
           />
           <input
             type="number"
-            class="w-[43%] m-3 p-3 rounded-md outline-0 bg-[#efefef]"
+            class="m-3 p-3 w-[90%] rounded-md outline-0 bg-[#efefef] lg:w-[41%] xl:w-[43%]"
             placeholder="Your telephone number"
           />
           <br />
           <input
             id="email"
             type="email"
-            class="w-[90%] m-3 p-3 rounded-md outline-0 bg-[#efefef]"
+            class="m-3 p-3 w-[90%] rounded-md outline-0 bg-[#efefef]"
             placeholder="Your email address"
           />
           <br />
@@ -142,11 +160,11 @@
             name=""
             id=""
             placeholder="Your message"
-            class="w-[90%] h-48 m-2 p-3 rounded-md outline-0 bg-[#efefef]"
+            class="h-48 w-[90%] m-3 p-3 rounded-md outline-0 bg-[#efefef]"
           ></textarea>
           <br />
           <button
-            class="text-yellow-600 border border-yellow-600 py-3 px-5 my-2 mx-3 rounded-md hover:text-white"
+            class="text-yellow-600 border border-yellow-600 py-2.5 px-3 my-2 mx-3 rounded-md hover:text-white xl:py-3 xl:px-5"
           >
             SEND EMAIL
           </button>
@@ -154,20 +172,28 @@
       </div>
     </main>
     <!-- Footer -->
-    <footer class="bg-purple-900 xl:py-20 xl:px-48 sm:px-5 sm:py-10 lg:p-20">
+    <footer
+      class="bg-purple-900 px-3 py-10 lg:py-14 lg:px-14 xl:py-20 xl:px-40"
+    >
       <div class="footer-top flex justify-between">
         <div class="logo flex items-center gap-2">
-          <h1 class="text-white text-5xl tracking-wider">LWM</h1>
-          <h4 class="text-[#cebcd8] w-[50%] text-sm">
+          <h1
+            class="text-white text-3xl tracking-wider lg:text-4xl xl:text-5xl"
+          >
+            LWM
+          </h1>
+          <h4
+            class="text-[#cebcd8] w-[20%] text-[5px] tracking-wide lg:text-[10px] lg:w-[50%] xl:text-sm"
+          >
             LONDON WEALTH MANAGEMENT
           </h4>
         </div>
         <div class="phone flex flex-col items-end">
-          <h3 class="text-white text-xl flex items-center gap-3">
-            <i class="fa-solid fa-phone-flip text-white text-sm"></i> 0203 326
-            2955
+          <h3 class="text-white text-xs flex items-center gap-3 lg:text-xl">
+            <i class="fa-solid fa-phone-flip text-white text-xs lg:text-sm"></i>
+            0203 326 2955
           </h3>
-          <h4 class="text-white text-sm mt-2.5">
+          <h4 class="text-white text-[8px] mt-1 lg:text-sm">
             22 Soho Square, London W1D 4NS
           </h4>
         </div>
@@ -175,7 +201,7 @@
       <div
         class="footer-bottom flex flex-col items-center gap-7 mt-12 text-center"
       >
-        <nav class="flex gap-7 text-white text-sm">
+        <nav class="flex gap-7 text-white text-[9px] lg:text-sm">
           <a href="#" class="duration-300 hover:text-yellow-600"
             >Client Charter</a
           >
@@ -186,7 +212,7 @@
             >Annual Disclosures</a
           >
         </nav>
-        <nav class="flex gap-7 text-white text-sm">
+        <nav class="flex gap-7 text-white text-[9px] lg:text-sm">
           <a href="#" class="duration-300 hover:text-yellow-600">Cookies</a>
           <a href="#" class="duration-300 hover:text-yellow-600"
             >Privacy Policy</a
@@ -197,15 +223,17 @@
             >Site by PLOTT</a
           >
         </nav>
-        <p class="text-white text-xs">
+        <p class="text-white text-xs lg:text-xs">
           London Wealth Management Ltd is Authorised and Regulated by the
           Financial Conduct Authority
         </p>
-        <p class="text-white text-xs">
+        <p class="text-white text-xs lg:text-xs">
           Registered in England and Wales number 6462818 at c/o Mercer & Hole.
           Trinity Court, Church Street Rickmansworth, WD31 RT
         </p>
       </div>
     </footer>
+    <!-- script -->
+    <script src="../JavaScript/header.js"></script>
   </body>
 </html>

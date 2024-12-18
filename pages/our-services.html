@@ -51,52 +51,70 @@
   <body>
     <!-- header -->
     <header
-      class="flex items-center xl:mx-16 md:my-12 md:mx-20 lg:mx-5 2xl:mx-24 absolute sm:mx-5 sm:my-10"
+      class="flex items-center m-4 sm:m-7 lg:my-8 xl:my-12 xl:mx-16 absolute"
     >
       <div
-        class="header-left flex items-center justify-between py-[10.5px] px-7 bg-white xl:w-[87%] md:w-[100%] xl:gap-32 2xl:gap-72"
+        class="header-left flex items-center justify-between py-2.5 px-3 bg-white w-[67vw] sm:w-[78vw] sm:px-7 sm:py-3 md:w-[82.5vw] xl:w-[81.5vw]"
       >
         <div class="logo flex items-center gap-2">
-          <h1 class="text-purple-900 text-5xl tracking-wider">LWM</h1>
-          <h4 class="w-[50%] text-sm tracking-wide">
+          <h1
+            class="text-purple-900 text-3xl tracking-wider lg:text-4xl xl:text-5xl"
+          >
+            LWM
+          </h1>
+          <h4
+            class="w-[20%] text-[5px] tracking-wide lg:text-[10px] lg:w-[50%] xl:text-sm"
+          >
             LONDON WEALTH MANAGEMENT
           </h4>
         </div>
-        <nav class="lg:flex xl:gap-6 text-sm sm:hidden lg:gap-3">
+        <i
+          class="fa-solid fa-bars text-purple-900 text-xl p-1 md:hidden cursor-pointer"
+          id="sidebar"
+        ></i>
+        <nav
+          class="gap-6 text-sm hidden transition-all duration-500 opacity-0 top-0 right-0 md:flex md:opacity-100 md:text-xs xl:text-sm"
+        >
           <a
             href="about-you.html"
-            class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
+            class="w-fit before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
             >ABOUT YOU</a
           >
           <a
             href="our-services.html"
-            class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-1 before:opacity-1"
+            class="w-fit before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
             >OUR SERVICES</a
           >
           <a
             href="about-us.html"
-            class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
+            class="w-fit before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
             >ABOUT US</a
           >
           <a
             href="contact-us.html"
-            class="before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-5 before:opacity-0 before:duration-500 hover:before:-translate-y-4 hover:before:opacity-100"
+            class="w-fit before:content-'' before:h-[1.5px] before:w-[100%] before:absolute relative before:-bottom-1 before:opacity-1"
             >CONTACT US</a
           >
         </nav>
       </div>
-      <div class="header-right text-white 2xl:py-[11px] px-8 sm:py-6 md:py-2.5">
-        <a href="#" class="hover:opacity-70 hover:duration-300">CLIENT LOGIN</a>
+      <div
+        class="header-right text-white py-1 px-5 text-center sm:py-1.5 md:py-1.5 lg:py-5 xl:py-6"
+      >
+        <a
+          href="#"
+          class="text-xs hover:opacity-70 hover:duration-300 xl:text-sm"
+          >CLIENT LOGIN</a
+        >
       </div>
     </header>
     <main>
       <!-- OUR SERVICES Section -->
       <div
-        class="our-services-section bg-purple-900 py-44 flex flex-col items-center gap-4"
+        class="our-services-section bg-purple-900 py-32 px-4 flex flex-col items-center gap-4 md:py-32 md:px-10 lg:gap-0 xl:py-44"
       >
         <h5 class="text-white tracking-widest mt-24">OUR SERVICES</h5>
         <h3
-          class="text-white text-2xl tracking-wider text-center lg:w-[45%] before:content-'' before:h-[210px] before:w-[1.5px] before:bg-yellow-600 before:absolute before:-bottom-60 before:left-[50%] relative sm:w-[80%]"
+          class="text-white text-2xl tracking-wider text-center before:content-'' before:h-[210px] before:w-[1.5px] before:bg-yellow-600 before:absolute before:-bottom-56 before:left-[50%] relative xl:before:-bottom-60 md:w-[75%] lg:mt-3 xl:w-[45%]"
         >
           At London Wealth Management we strive to deliver an outstanding
           personal service with the aim of protecting and growing the wealth of
@@ -104,8 +122,8 @@
         </h3>
       </div>
       <!-- info -->
-      <div class="info flex flex-col items-center my-24">
-        <h3 class="lg:w-[42%] text-center text-xl sm:w-[80%]">
+      <div class="info flex flex-col items-center my-24 mx-4">
+        <h3 class="text-center text-xl md:w-[75%] xl:w-[42%]">
           We believe the best way to deliver such a service is through the
           calibre of those that represent you. We have built a team of
           experienced, talented and highly qualified professionals. When you
@@ -115,9 +133,9 @@
       </div>
       <!-- Investment Management Section -->
       <div
-        class="investment-management-section flex items-center py-3 px-44 gap-24 sm:px-12 sm:flex-wrap-reverse justify-center lg:flex-nowrap"
+        class="investment-management-section flex flex-wrap justify-center items-center gap-10 p-4 md:px-10 lg:flex-nowrap xl:px-44 xl:gap-24"
       >
-        <div class="investment-management-info flex flex-col lg:gap-7 sm:gap-4">
+        <div class="investment-management-info flex flex-col gap-7">
           <h2 class="text-2xl">Financial Planning led Investment Management</h2>
           <p class="text-stone-500 text-[16px] leading-6">
             We offer financial planning and discretionary investment management.
@@ -140,24 +158,26 @@
         <img
           src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/07/SIGNPOST-ill.jpeg.webp"
           alt=""
-          class="lg:w-[50%] sm:w-[80%]"
+          class="md:w-[70%] lg:w-[50%]"
         />
       </div>
       <!-- Unified Service Section -->
       <div
-        class="unified-service-section flex flex-col items-center gap-7 py-10 px-36 mt-10 before:content-'' before:w-[100%] before:h-[1px] before:bg-[#cecece] before:top-0 before:absolute relative after:content-'' after:w-[100%] after:h-[1px] after:bg-[#cecece] after:bottom-0 after:absolute sm:px-5"
+        class="unified-service-section flex flex-col items-center gap-7 py-10 px-4 mt-10 before:content-'' before:w-[100%] before:h-[1px] before:bg-[#cecece] before:top-0 before:absolute relative after:content-'' after:w-[100%] after:h-[1px] after:bg-[#cecece] after:bottom-0 after:absolute md:px-10 xl:px-36"
       >
         <h2 class="text-2xl tracking-wider">
           Combined disciplines for a unified service
         </h2>
-        <p class="lg:w-[50%] text-center leading-5 text-stone-500 sm:w-[70%]">
+        <p class="text-center leading-5 text-stone-500 lg:w-[60%] xl:w-[50%]">
           To deliver the best possible outcomes we shall research, review,
           rebalance, and report regularly. We will sit with you periodically to
           review your planning and goals, ultimately keeping you on track.
         </p>
-        <div class="services flex justify-center gap-36 mt-8">
+        <div
+          class="services flex flex-wrap gap-10 mt-8 mx-8 xl:gap-36 md:flex-nowrap md:justify-center"
+        >
           <ul
-            class="flex flex-col gap-4 w-[30%] list-disc marker:text-yellow-600 marker:text-2xl"
+            class="flex flex-col gap-2 list-disc marker:text-yellow-600 marker:text-2xl md:w-[70%] xl:w-[30%] xl:gap-4"
           >
             <h3 class="mb-2 text-lg">Your Financial Planning</h3>
             <li class="ml-5 leading-5">Cash management</li>
@@ -172,7 +192,7 @@
             <li class="ml-5 leading-5">Protection reviews</li>
           </ul>
           <ul
-            class="flex flex-col gap-4 w-[30%] list-disc marker:text-yellow-600 marker:text-2xl"
+            class="flex flex-col gap-2 list-disc marker:text-yellow-600 marker:text-2xl md:w-[70%] xl:w-[30%] xl:gap-4"
           >
             <h3 class="mb-2 text-lg">Your Investment Management</h3>
             <li class="ml-5 leading-5">
@@ -193,14 +213,14 @@
       </div>
       <!-- CONTACT US Section -->
       <div
-        class="contact-us-section flex items-center xl:mx-56 sm:mx-5 my-20 lg:mx-28"
+        class="contact-us-section flex flex-wrap-reverse items-center my-16 mx-4 sm:flex-nowrap lg:mx-24 lg:my-20 xl:mx-60"
       >
         <div
-          class="contact-info flex flex-col items-center lg:gap-6 text-center sm:gap-3"
+          class="contact-info flex flex-col items-center gap-2 text-center p-4 sm:gap-6"
         >
           <i class="fa-solid fa-phone-flip text-white text-xl"></i>
           <h4 class="text-white">Get in touch</h4>
-          <h2 class="text-white w-[70%] lg:text-xl sm:text-lg">
+          <h2 class="text-white text-sm md:text-xl sm:w-[75%]">
             Contact us for a conversation with one of our experts to see if we
             could be the right fit for you.
             <span class="contact-number text-white hover:text-purple-900"
@@ -216,25 +236,33 @@
         <img
           src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/08/new_cta_7.jpg.webp"
           alt=""
-          class="w-[50%] h-fit"
+          class="object-cover w-[100%] h-[200px] sm:w-[50%] sm:h-fit"
         />
       </div>
     </main>
     <!-- Footer -->
-    <footer class="bg-purple-900 xl:py-20 xl:px-48 sm:px-5 sm:py-10 lg:p-20">
+    <footer
+      class="bg-purple-900 px-3 py-10 lg:py-14 lg:px-14 xl:py-20 xl:px-40"
+    >
       <div class="footer-top flex justify-between">
         <div class="logo flex items-center gap-2">
-          <h1 class="text-white text-5xl tracking-wider">LWM</h1>
-          <h4 class="text-[#cebcd8] w-[50%] text-sm">
+          <h1
+            class="text-white text-3xl tracking-wider lg:text-4xl xl:text-5xl"
+          >
+            LWM
+          </h1>
+          <h4
+            class="text-[#cebcd8] w-[20%] text-[5px] tracking-wide lg:text-[10px] lg:w-[50%] xl:text-sm"
+          >
             LONDON WEALTH MANAGEMENT
           </h4>
         </div>
         <div class="phone flex flex-col items-end">
-          <h3 class="text-white text-xl flex items-center gap-3">
-            <i class="fa-solid fa-phone-flip text-white text-sm"></i> 0203 326
-            2955
+          <h3 class="text-white text-xs flex items-center gap-3 lg:text-xl">
+            <i class="fa-solid fa-phone-flip text-white text-xs lg:text-sm"></i>
+            0203 326 2955
           </h3>
-          <h4 class="text-white text-sm mt-2.5">
+          <h4 class="text-white text-[8px] mt-1 lg:text-sm">
             22 Soho Square, London W1D 4NS
           </h4>
         </div>
@@ -242,7 +270,7 @@
       <div
         class="footer-bottom flex flex-col items-center gap-7 mt-12 text-center"
       >
-        <nav class="flex gap-7 text-white text-sm">
+        <nav class="flex gap-7 text-white text-[9px] lg:text-sm">
           <a href="#" class="duration-300 hover:text-yellow-600"
             >Client Charter</a
           >
@@ -253,7 +281,7 @@
             >Annual Disclosures</a
           >
         </nav>
-        <nav class="flex gap-7 text-white text-sm">
+        <nav class="flex gap-7 text-white text-[9px] lg:text-sm">
           <a href="#" class="duration-300 hover:text-yellow-600">Cookies</a>
           <a href="#" class="duration-300 hover:text-yellow-600"
             >Privacy Policy</a
@@ -264,15 +292,17 @@
             >Site by PLOTT</a
           >
         </nav>
-        <p class="text-white text-xs">
+        <p class="text-white text-xs lg:text-xs">
           London Wealth Management Ltd is Authorised and Regulated by the
           Financial Conduct Authority
         </p>
-        <p class="text-white text-xs">
+        <p class="text-white text-xs lg:text-xs">
           Registered in England and Wales number 6462818 at c/o Mercer & Hole.
           Trinity Court, Church Street Rickmansworth, WD31 RT
         </p>
       </div>
     </footer>
+    <!-- script -->
+    <script src="../JavaScript/header.js"></script>
   </body>
 </html>
