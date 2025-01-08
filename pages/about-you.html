@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ABOUT YOU | LWM</title>
+    <!-- tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -12,6 +15,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -72,7 +77,7 @@
           id="sidebar"
         ></i>
         <nav
-          class="gap-6 text-sm hidden transition-all duration-500 opacity-0 top-0 right-0 md:flex md:opacity-100 md:text-xs xl:text-sm"
+          class="flex flex-col gap-6 bg-white rounded-md px-5 py-7 text-sm transition-all duration-500 opacity-0 translate-x-3 absolute z-10 top-20 right-3 md:static md:translate-x-0 md:opacity-100 md:bg-transparent md:flex-row md:text-xs md:p-0 lg:gap-8 xl:text-sm xl:gap-12"
         >
           <a
             href="about-you.html"
@@ -101,7 +106,7 @@
       >
         <a
           href="#"
-          class="text-xs hover:opacity-70 hover:duration-300 xl:text-sm"
+          class="text-xs transition-all duration-300 hover:opacity-70 xl:text-sm"
           >CLIENT LOGIN</a
         >
       </div>
@@ -131,7 +136,7 @@
       </div>
       <!-- Service Section -->
       <div
-        class="service-section px-4 flex flex-wrap gap-12 items-center md:px-12 lg:flex-nowrap lg:gap-0.5 xl:px-16 xl:pb-20 xl:pt-10"
+        class="service-section px-4 flex flex-wrap gap-12 items-center md:px-12 lg:flex-nowrap lg:gap-0.5 xl:pb-20 xl:pt-10 xl:px-44"
       >
         <div class="service-info flex flex-col gap-6">
           <h2 class="text-2xl">What you want from our service</h2>
@@ -158,10 +163,10 @@
             relationships.
           </p>
         </div>
-        <div class="client-info bg-[#f4f5f5] p-7 xl:py-12 xl:px-16">
+        <div class="client-info bg-[#f4f5f5] p-7 xl:p-12">
           <h4 class="text-xl">LWM clients are:</h4>
           <ul
-            class="flex flex-col gap-5 mt-5 ml-4 list-disc marker:text-yellow-600 marker:text-2xl"
+            class="flex flex-col gap-4 mt-5 ml-4 list-disc marker:text-yellow-600 marker:text-2xl"
           >
             <li class="text-sm tracking-wider leading-6 text-stone-500">
               High net worth individual
@@ -304,24 +309,24 @@
         class="footer-bottom flex flex-col items-center gap-7 mt-12 text-center"
       >
         <nav class="flex gap-7 text-white text-[9px] lg:text-sm">
-          <a href="#" class="duration-300 hover:text-yellow-600"
+          <a href="#" class="duration-500 hover:text-yellow-600"
             >Client Charter</a
           >
-          <a href="#" class="duration-300 hover:text-yellow-600"
+          <a href="#" class="duration-500 hover:text-yellow-600"
             >Explaining the Jargon</a
           >
-          <a href="#" class="duration-300 hover:text-yellow-600"
+          <a href="#" class="duration-500 hover:text-yellow-600"
             >Annual Disclosures</a
           >
         </nav>
         <nav class="flex gap-7 text-white text-[9px] lg:text-sm">
-          <a href="#" class="duration-300 hover:text-yellow-600">Cookies</a>
-          <a href="#" class="duration-300 hover:text-yellow-600"
+          <a href="#" class="duration-500 hover:text-yellow-600">Cookies</a>
+          <a href="#" class="duration-500 hover:text-yellow-600"
             >Privacy Policy</a
           >
-          <a href="#" class="duration-300 hover:text-yellow-600">Disclaimer</a>
-          <a href="#" class="duration-300 hover:text-yellow-600">Complaints</a>
-          <a href="#" class="duration-300 hover:text-yellow-600"
+          <a href="#" class="duration-500 hover:text-yellow-600">Disclaimer</a>
+          <a href="#" class="duration-500 hover:text-yellow-600">Complaints</a>
+          <a href="#" class="duration-500 hover:text-yellow-600"
             >Site by PLOTT</a
           >
         </nav>

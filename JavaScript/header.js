@@ -1,32 +1,17 @@
-const sidebar = document.getElementById("sidebar");
+const sidebar = document.querySelector("#sidebar");
 const nav = document.querySelector("header nav");
 
-const navClasses = [
-  "flex",
-  "flex-col",
-  "absolute",
-  "bg-[#b09abb]",
-  "rounded-md",
-  "px-5",
-  "py-7",
-  "top-20",
-  "right-5",
-  "opacity-90",
-];
-
+// Sidebar click to toggle visibility
 sidebar.addEventListener("click", (event) => {
-  event.stopPropagation();
+  event.stopPropagation(); // Prevent body click from triggering
 
-  if (nav.classList.contains("hidden")) {
-    nav.classList.remove("hidden");
-    nav.classList.add(...navClasses);
-  } else {
-    nav.classList.add("hidden");
-    nav.classList.remove(...navClasses);
-  }
+  // Toggle visibility and transition
+  nav.classList.toggle("opacity-0");
+  nav.classList.toggle("translate-x-3");
 });
 
+// Close nav when clicking outside
 document.body.addEventListener("click", () => {
-  nav.classList.add("hidden");
-  nav.classList.remove(...navClasses);
+  nav.classList.add("opacity-0");
+  nav.classList.add("translate-x-3");
 });

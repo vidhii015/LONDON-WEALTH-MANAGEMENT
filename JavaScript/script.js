@@ -1,17 +1,27 @@
-const client = document.querySelectorAll(".client-section .client");
+const clients = document.querySelectorAll(".client-section .client");
 const pages = document.querySelectorAll(".pages .page");
-console.log(client);
 
 pages.forEach((page, index) => {
   page.addEventListener("click", () => {
-    client.forEach((cli) => {
-      cli.classList.add("hidden");
+    // Reset all pages
+    pages.forEach((pg) => {
+      pg.classList.remove("active");
+      pg.classList.add("bg-white", "text-[#2e3b42]");
     });
-    if (client[index].classList.contains("hidden")) {
-      client[index].classList.remove("hidden");
-      client[index].classList.add("flex");
-    } else {
-      client[index].classList.remove("hidden");
+
+    // Set active page styles
+    page.classList.add("active");
+
+    // Hide all clients
+    clients.forEach((cli) => {
+      cli.classList.add("hidden");
+      cli.classList.remove("flex");
+    });
+
+    // Show selected client
+    if (clients[index].classList.contains("hidden")) {
+      clients[index].classList.remove("hidden");
+      clients[index].classList.add("flex");
     }
   });
 });
