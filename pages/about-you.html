@@ -73,7 +73,7 @@
           </h4>
         </div>
         <i
-          class="fa-solid fa-bars text-purple-900 text-xl p-1 md:hidden cursor-pointer"
+          class="fa-solid fa-bars text-purple-900 text-xl p-1 md:invisible cursor-pointer"
           id="sidebar"
         ></i>
         <nav
@@ -106,12 +106,13 @@
       >
         <a
           href="#"
-          class="text-xs transition-all duration-300 hover:opacity-70 xl:text-sm"
+          class="login-link text-xs transition-all duration-300 hover:opacity-70 xl:text-sm"
           >CLIENT LOGIN</a
         >
       </div>
     </header>
     <main>
+      <div id="card-container" class="hidden"></div>
       <!-- About You Section -->
       <div
         class="about-you-section bg-purple-900 py-32 px-3 flex flex-col items-center gap-4 md:py-32 md:px-10 xl:py-44"
@@ -193,7 +194,7 @@
         class="accumulation-section flex flex-wrap items-start py-12 px-8 gap-5 md:px-16 lg:flex-nowrap lg:gap-12 xl:gap-28 xl:py-12 xl:px-44"
       >
         <img
-          src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/07/LIBERTY-CLOCK-DARKER-PURPLE.jpeg.webp"
+          src="../images/accumulation.webp"
           alt=""
           class="lg:w-[47%] lg:sticky lg:top-0"
         />
@@ -272,7 +273,7 @@
           </ul>
         </div>
         <img
-          src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/07/flowershop.jpeg.webp"
+          src="../images/decumulation.webp"
           alt=""
           class="lg:w-[47%] lg:sticky lg:top-0"
         />
@@ -342,5 +343,6 @@
     </footer>
     <!-- script -->
     <script src="../JavaScript/header.js"></script>
+    <script src="../JavaScript/login.js"></script>
   </body>
 </html>

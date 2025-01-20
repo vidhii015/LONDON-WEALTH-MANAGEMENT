@@ -69,7 +69,7 @@
           </h4>
         </div>
         <i
-          class="fa-solid fa-bars text-purple-900 text-xl p-1 md:hidden cursor-pointer"
+          class="fa-solid fa-bars text-purple-900 text-xl p-1 md:invisible cursor-pointer"
           id="sidebar"
         ></i>
         <nav
@@ -102,12 +102,13 @@
       >
         <a
           href="#"
-          class="text-xs transition-all duration-300 hover:opacity-70 xl:text-sm"
+          class="login-link text-xs transition-all duration-300 hover:opacity-70 xl:text-sm"
           >CLIENT LOGIN</a
         >
       </div>
     </header>
     <main>
+      <div id="card-container" class="hidden"></div>
       <!-- ABOUT US Section -->
       <div
         class="about-us-section bg-purple-900 py-32 flex flex-col items-center gap-4 md:py-32 xl:py-44"
@@ -156,11 +157,7 @@
           class="values flex flex-wrap gap-14 justify-evenly mt-14 lg:flex-nowrap lg:gap-0"
         >
           <div class="value flex flex-col items-center gap-7">
-            <img
-              src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/07/Group-8.jpg.webp"
-              alt=""
-              class="h-20 w-20"
-            />
+            <img src="../images/value-1.webp" alt="" class="h-20 w-20" />
             <h3 class="text-center text-xl">Authentic to the core</h3>
             <p class="w-80 text-center">
               We build real human connections with our clients, aiming to earn
@@ -169,11 +166,7 @@
             </p>
           </div>
           <div class="value flex flex-col items-center gap-7">
-            <img
-              src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/07/Group-8-2.jpg.webp"
-              alt=""
-              class="h-20 w-20"
-            />
+            <img src="../images/value-2.webp" alt="" class="h-20 w-20" />
             <h3 class="text-center text-xl">Rigorous professionalism</h3>
             <p class="w-80 text-center">
               We operate with quiet efficiency in our processes and practices.
@@ -181,11 +174,7 @@
             </p>
           </div>
           <div class="value flex flex-col items-center gap-7">
-            <img
-              src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/07/Group-8-3.jpg.webp"
-              alt=""
-              class="h-20 w-20"
-            />
+            <img src="../images/value-3.webp" alt="" class="h-20 w-20" />
             <h3 class="text-center text-xl">We believe we can</h3>
             <p class="w-80 text-center">
               With a can-do attitude we will persevere to achieve the best
@@ -322,5 +311,6 @@
     </footer>
     <!-- script -->
     <script src="../JavaScript/header.js"></script>
+    <script src="../JavaScript/login.js"></script>
   </body>
 </html>

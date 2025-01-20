@@ -67,7 +67,7 @@
           </h4>
         </div>
         <i
-          class="fa-solid fa-bars text-purple-900 text-xl p-1 md:hidden cursor-pointer"
+          class="fa-solid fa-bars text-purple-900 text-xl p-1 md:invisible cursor-pointer"
           id="sidebar"
         ></i>
         <nav
@@ -100,12 +100,13 @@
       >
         <a
           href="#"
-          class="text-xs transition-all duration-300 hover:opacity-70 xl:text-sm"
+          class="login-link text-xs transition-all duration-300 hover:opacity-70 xl:text-sm"
           >CLIENT LOGIN</a
         >
       </div>
     </header>
     <main>
+      <div id="card-container" class="hidden"></div>
       <!-- Contact Us Section -->
       <div
         class="contact-us-section bg-purple-900 py-32 px-3 flex flex-col items-center gap-4 md:py-32 md:px-10 lg:gap-0 xl:py-44"
@@ -124,11 +125,7 @@
         class="contact-form flex flex-wrap py-28 px-6 gap-7 md:flex-nowrap lg:px-16 xl:px-36"
       >
         <div class="contact-info flex flex-col gap-6">
-          <img
-            src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/08/slimSoho.jpeg"
-            alt=""
-            class="lg:w-[75%]"
-          />
+          <img src="../images/contact-page.jpeg" alt="" class="lg:w-[75%]" />
           <h3 class="transition-all duration-300 text-lg hover:text-yellow-600">
             <i class="fa-solid fa-phone-flip text-yellow-600 mr-2"></i> 0203 326
             2225
@@ -170,7 +167,7 @@
           <br />
           <a
             href="mailto:LWM"
-            class="text-yellow-600 border border-yellow-600 py-2.5 px-3 my-2 mx-3 rounded-md transition-all duration-300 hover:text-white xl:py-3 xl:px-5"
+            class="text-yellow-600 border border-yellow-600 py-2.5 px-3 my-2 mx-3 rounded-md transition-all duration-300 hover:text-white hover:border-transparent xl:py-3 xl:px-5"
           >
             SEND EMAIL
           </a>
@@ -241,5 +238,6 @@
     </footer>
     <!-- script -->
     <script src="../JavaScript/header.js"></script>
+    <script src="../JavaScript/login.js"></script>
   </body>
 </html>

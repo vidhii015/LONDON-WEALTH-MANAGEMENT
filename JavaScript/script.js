@@ -1,3 +1,5 @@
+// Client Section JS
+
 const clients = document.querySelectorAll(".client-section .client");
 const pages = document.querySelectorAll(".pages .page");
 

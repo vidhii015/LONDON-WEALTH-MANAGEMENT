@@ -66,7 +66,7 @@
       class="flex items-center my-4 mx-3 sm:m-7 lg:my-8 xl:my-12 xl:mx-16"
     >
       <div
-        class="header-left flex items-center justify-between py-2.5 px-3 bg-purple-900 w-[90%] sm:px-7 sm:py-3 lg:w-[87%]"
+        class="header-left flex items-center justify-between py-2.5 px-3 bg-purple-900 w-[90%] sm:px-7 sm:py-3 lg:w-[87%] xl:w-[90%]"
       >
         <div class="logo flex items-center gap-2">
           <h1
@@ -81,7 +81,7 @@
           </h4>
         </div>
         <i
-          class="fa-solid fa-bars text-white text-xl p-1 md:hidden cursor-pointer"
+          class="fa-solid fa-bars text-white text-xl p-1 md:invisible cursor-pointer"
           id="sidebar"
         ></i>
         <nav
@@ -114,12 +114,13 @@
       >
         <a
           href="#"
-          class="text-xs transition-all duration-300 hover:opacity-70 xl:text-sm"
+          class="login-link text-xs transition-all duration-300 hover:opacity-70 xl:text-sm"
           >CLIENT LOGIN</a
         >
       </div>
     </header>
     <main>
+      <div id="card-container" class="hidden"></div>
       <!-- Hero Section -->
       <div
         class="hero-section flex flex-wrap-reverse items-center justify-between m-5 gap-3 sm:my-14 sm:mx-10 lg:flex-nowrap xl:mx-40"
@@ -141,11 +142,7 @@
             DISCOVER MORE
           </button>
         </div>
-        <img
-          src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/08/heroHomeV2.jpeg.webp"
-          alt=""
-          class="lg:w-[53%]"
-        />
+        <img src="images/hero-section.webp" alt="" class="lg:w-[53%]" />
       </div>
 
       <!-- Intro Section -->
@@ -297,7 +294,7 @@
           </a>
         </div>
         <img
-          src="https://dsp4lutmxlw9a.cloudfront.net/wp-content/uploads/2023/08/new_cta_5.jpg.webp"
+          src="images/contact-us-1.webp"
           alt=""
           class="object-cover w-[100%] h-[200px] sm:w-[50%] sm:h-fit"
         />
@@ -368,5 +365,6 @@
     <!-- script -->
     <script src="JavaScript/header.js"></script>
     <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/login.js"></script>
   </body>
 </html>
