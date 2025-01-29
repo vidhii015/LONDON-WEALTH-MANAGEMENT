@@ -1,7 +1,7 @@
 // CLIENT LOGIN JS
 
 // Fetch and insert the card HTML into the container
-fetch("../pages/client-login.html")
+fetch("/assets/components/client-login.html")
   .then((response) => response.text()) // Convert response to text
   .then((html) => {
     document.getElementById("card-container").innerHTML = html; // Insert HTML into container

@@ -61,6 +61,8 @@
   </head>
 
   <body>
+    <div id="loader-container"></div>
+
     <!-- header -->
     <header
       class="flex items-center my-4 mx-3 sm:m-7 lg:my-8 xl:my-12 xl:mx-16"
@@ -142,7 +144,11 @@
             DISCOVER MORE
           </button>
         </div>
-        <img src="images/hero-section.webp" alt="" class="lg:w-[53%]" />
+        <img
+          src="./assets/images/hero-section.webp"
+          alt=""
+          class="lg:w-[53%]"
+        />
       </div>
 
       <!-- Intro Section -->
@@ -363,35 +369,9 @@
       </div>
     </footer>
     <!-- script -->
-    <script src="JavaScript/header.js"></script>
-    <script src="JavaScript/script.js"></script>
-    <script>
-      // CLIENT LOGIN JS
-
-      // Fetch and insert the card HTML into the container
-      fetch("./pages/client-login.html")
-        .then((response) => response.text()) // Convert response to text
-        .then((html) => {
-          document.getElementById("card-container").innerHTML = html; // Insert HTML into container
-        });
-
-      const loginLink = document.querySelector(".login-link");
-      const cardContainer = document.querySelector("#card-container");
-      const body = document.body;
-
-      // Event listener to open the login card when the login link is clicked
-      loginLink.addEventListener("click", () => {
-        cardContainer.classList.remove("hidden"); // Show the login card
-        body.classList.add("overflow-y-hidden"); // Prevent body from scrolling
-
-        const close = document.querySelector(".close");
-
-        // Event listener to close the login card when the close button is clicked
-        close.addEventListener("click", () => {
-          cardContainer.classList.add("hidden"); // Hide the login card
-          body.classList.remove("overflow-y-hidden"); // Enable body scrolling
-        });
-      });
-    </script>
+    <script src="./assets/JavaScript/header.js"></script>
+    <script src="./assets/JavaScript/script.js"></script>
+    <script src="./assets/JavaScript/login.js"></script>
+    <script src="./assets/JavaScript/Loader.js"></script>
   </body>
 </html>
