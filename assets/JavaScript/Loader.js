@@ -1,11 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-  fetch("/assets/components/Loader.html")
-    .then((response) => response.text())
-    .then((html) => {
-      document.getElementById("loader-container").innerHTML = html;
+// Wait until the DOM is fully loaded before running the script
+import { setLoader } from "../utils/utils.js";
 
-      setTimeout(() => {
-        document.querySelector(".loader-overlay").style.display = "none";
-      }, 5000);
-    });
-});
+setLoader();

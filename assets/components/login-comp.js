@@ -1,32 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <!-- tailwindcss -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- CLIENT LOGIN -->
-    <form
+const loginComponent = `<form
       class="client-login fixed z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#ffffff5b] backdrop-blur-sm border border-stone-200 shadow-2xl rounded-lg w-[450px] px-10 py-9"
     >
       <i
@@ -62,6 +34,6 @@
       >
         LOG IN
       </button>
-    </form>
-  </body>
-</html>
+    </form>`;
+
+export default loginComponent;
