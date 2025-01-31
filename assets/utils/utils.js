@@ -6,7 +6,7 @@ export function setLoader() {
     let newLoader = document.createElement("div");
     newLoader.innerHTML = loader;
     newLoader.className =
-      "fixed top-0 left-0 w-full h-screen flex justify-center items-center z-1";
+      "fixed top-0 left-0 w-full h-screen flex justify-center items-center z-10";
 
     document.body.append(newLoader);
 
@@ -25,9 +25,11 @@ export function showModal() {
 
   document.body.append(newModal);
   document.body.style.height = "100vh";
+  document.body.style.overflow = "hidden";
   let closeBtn = document.querySelector(".login-modal .close");
   closeBtn.addEventListener("click", () => {
     newModal.remove();
     document.body.style.height = "initial";
+    document.body.style.overflow = "visible";
   });
 }
