@@ -1,5 +1,5 @@
 const loginComponent = `<form
-      class="client-login fixed z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#ffffff5b] backdrop-blur-sm border border-stone-200 shadow-2xl rounded-lg w-[450px] px-10 py-9"
+      class="client-login fixed z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#ffffff5b] backdrop-blur-sm border border-stone-200 shadow-2xl rounded-lg w-[300px] px-10 py-9 md:w-[450px]"
     >
       <i
         class="close fa-solid fa-circle-xmark text-xl text-purple-900 absolute top-3 right-5 cursor-pointer active:scale-95"
