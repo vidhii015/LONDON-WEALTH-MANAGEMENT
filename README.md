@@ -1,4 +1,4 @@
-## 💼 **Financial Services Website** 
+## 💼 **London Wealth Management** 
 
 A **sleek and professional** website for financial services, designed with **HTML, Tailwind CSS, and JavaScript**. It ensures a **smooth user experience**, clean aesthetics, and a trustworthy online presence.
 
