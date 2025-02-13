@@ -12,6 +12,8 @@ A **sleek and professional** website for financial services, designed with **HTM
 
 ✅ Easy-to-navigate interface
 
+✅ **Custom CSS loader** from [css-loaders.com](https://css-loaders.com/) 
+
 ### 🛠️ Technologies Used
 
 - **HTML**
