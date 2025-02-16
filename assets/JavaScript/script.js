@@ -14,13 +14,11 @@ pages.forEach((page, index) => {
     // Set active page styles
     page.classList.add("active");
 
-    // Hide all clients
     clients.forEach((cli) => {
       cli.classList.add("hidden");
       cli.classList.remove("flex");
     });
 
-    // Show selected client
     if (clients[index].classList.contains("hidden")) {
       clients[index].classList.remove("hidden");
       clients[index].classList.add("flex");
